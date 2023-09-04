@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome, Click the alert button at your own risk</h2>
+    <div id="liveAlertPlaceholder"></div>
+    <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+3Y5z90jMk8sBpFMeK1fy4d2ZbIbbVYUew+OrCXaRkfjF0wq" crossorigin="anonymous"></script>
+
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+
+        const appendAlert = (message, type) => {
+            const wrapper = document.createElement('div');
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('');
+
+            alertPlaceholder.append(wrapper);
+        };
+
+        const alertTrigger = document.getElementById('liveAlertBtn');
+
+        if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                appendAlert('This is what displays when you click the alert button, YOU ARE AMAZING', 'success');
+            });
+        }
+    </script>
+</body>
+</html>
