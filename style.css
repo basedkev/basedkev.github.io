@@ -21,3 +21,23 @@ h1 {
     margin: 20px auto;
     max-width: 100%;
 }
+
+/* CSS for small-image */
+.small-image {
+    max-width: 50%; /* Adjust the width as needed */
+    float: left;    /* Float the image to the left */
+    margin-right: 20px; /* Add some space to the right of the image */
+  }
+  
+  /* CSS for the text-container */
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Adjust as needed */
+    padding: 20px; /* Adjust the padding as needed */
+  }
+  
+  .text-container p {
+    max-width: 50%; /* Adjust the width as needed */
+  }
+  
