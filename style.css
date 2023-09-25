@@ -1,135 +1,131 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color:rgb(0, 0, 0)
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
 }
 
 h1 {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-
 
 .image-container {
-    text-align: center;
+  text-align: center;
+  margin-top: -10px;
 }
 
-
 .image-container img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
 }
 
 /* CSS for small-image */
 .small-image {
-    max-width: 50%; /* Adjust the width as needed */
-    float: left;    /* Float the image to the left */
-    margin-right: 20px; /* Add some space to the right of the image */
-  }
-  
-  /* CSS for the text-container */
+  max-width: 50%; /* Adjust the width as needed */
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add some space to the right of the image */
+  /* margin-top: 0px; */
+}
+
+/* CSS for the text-container */
 .text-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Adjust as needed */
-    padding: 20px; /* Adjust the padding as needed */
-  }
-  
-  .text-container p {
-    max-width: 50%; /* Adjust the width as needed */
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Adjust as needed */
+  padding: 20px; /* Adjust the padding as needed */
+}
 
-  .forum-container {
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f2f2f2;
-    }
+.text-container p {
+  max-width: 50%; /* Adjust the width as needed */
+}
 
-    header {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 1rem;
-    }
-
-    .container {
-        max-width: 800px;
-        margin: 2rem auto;
-        padding: 1rem;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    .forum {
-        margin-top: 20px;
-    }
-
-    .comment {
-        border: 1px solid #ddd;
-        padding: 10px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-    }
-
-    .comment h3 {
-        font-size: 18px;
-    }
-
-    .comment p {
-        font-size: 16px;
-    }
-
-    .post-form {
-        margin-top: 20px;
-    }
-
-    textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
-
-    button {
-        background-color: #333;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+.forum-container {
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
   }
 
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
 
-        /* Add some basic breadcrumb styling */
-        .breadcrumb {
-            margin: 20px 0;
-        }
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
-        .breadcrumb-item {
-            display: inline;
-        }
+  h1 {
+    font-size: 24px;
+  }
 
-        .breadcrumb-item::before {
-            content: '>';
-            margin: 0 10px;
-        }
+  .forum {
+    margin-top: 20px;
+  }
 
-        .breadcrumb-item:first-child::before {
-            content: '';
-            margin: 0;
-        }
-    
+  .comment {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .comment h3 {
+    font-size: 18px;
+  }
+
+  .comment p {
+    font-size: 16px;
+  }
+
+  .post-form {
+    margin-top: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+/* Add some basic breadcrumb styling */
+.breadcrumb {
+  margin: 0px 0;
+}
+
+.breadcrumb-item {
+  display: inline;
+}
+
+.breadcrumb-item::before {
+  content: ">";
+  margin: 0 10px;
+}
+
+.breadcrumb-item:first-child::before {
+  content: "";
+  margin: 0;
+}
 
