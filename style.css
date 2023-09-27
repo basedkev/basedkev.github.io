@@ -38,7 +38,7 @@ h1 {
 }
 
 .text-container p {
-  max-width: 50%; /* Adjust the width as needed */
+  max-width: 100%; /* Adjust the width as needed */
 }
 
 .forum-container {
