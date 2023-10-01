@@ -26,7 +26,7 @@ h1 {
   max-width: 50%; /* Adjust the width as needed */
   float: left; /* Float the image to the left */
   margin-right: 20px; /* Add some space to the right of the image */
-  /* margin-top: 0px; */
+  margin-top: 0px;
 }
 
 /* CSS for the text-container */
